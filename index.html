@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<main>
+		<img src="quizza.png" alt="quizza-logo" id="logo">
+		<p id="intro"> Welcome to Quizza, the ultimate destination for pizza lovers who enjoy a little challenge with
+			their
+			favorite slice.
+			Quizza is a fun and interactive website filled with quizzes about everything pizza, from its delicious
+			history and unique styles around the world to toppings, recipes, and trivia you never knew you needed.
+			Whether you're a casual fan or a true pizza enthusiast, Quizza offers a playful way to test your knowledge,
+			learn new things, and share the fun with friends. Dive in, explore the quizzes, and discover a whole new way
+			to enjoy the world of pizza—one question at a time!
+		</p>
+
+		<form id="quiz">
+			<div class="question" id="question-one">
+				<p class="written-question">
+					1. Where was pizza first created?
+				</p>
+				<div class="options">
+					<input type="radio" id="qone-option-one" name="question-one" value="a">
+					<label for="qone-option-one" class="option">Spain</label>
+				</div>
+				<div class="options">
+					<input type="radio" id="qone-option-two" name="question-one" value="b">
+					<label for="qone-option-two" class="option">Italy</label>
+				</div>
+				<div class="options">
+					<input type="radio" id="qone-option-three" name="question-one" value="c">
+					<label for="qone-option-three" class="option">Greece</label>
+				</div>
+				<div class="options">
+					<input type="radio" id="qone-option-four" name="question-one" value="d">
+					<label for="qone-option-four" class="option">France</label>
+				</div>
+			</div>
+
+			<div class="question" id="question-two">
+				<p class="written-question">
+					2. What is the most popular pizza topping?
+				</p>
+				<div class="options">
+					<input type="radio" id="qtwo-option-one" name="question-two" value="a">
+					<label for="qtwo-option-one" class="option">Pepperoni</label>
+				</div>
+				<div class="options">
+					<input type="radio" id="qtwo-option-two" name="question-two" value="b">
+					<label for="qtwo-option-two" class="option">Sausage</label>
+				</div>
+				<div class="options">
+					<input type="radio" id="qtwo-option-three" name="question-two" value="c">
+					<label for="qtwo-option-three" class="option">Anchovies</label>
+				</div>
+				<div class="options">
+					<input type="radio" id="qtwo-option-four" name="question-two" value="d">
+					<label for="qtwo-option-four" class="option">Bell Peppers</label>
+				</div>
+			</div>
+
+			<div class="question" id="question-three">
+				<p class="written-question">
+					3. Which historical figure is said to have inspired the creation of the Margherita pizza?
+				</p>
+				<div class="options">
+					<input type="radio" id="qthree-option-one" name="question-three" value="a">
+					<label for="qthree-option-one" class="option">Napoleon Bonaparte</label>
+				</div>
+				<div class="options">
+					<input type="radio" id="qthree-option-two" name="question-three" value="b">
+					<label for="qthree-option-two" class="option">Queen Victoria</label>
+				</div>
+				<div class="options">
+					<input type="radio" id="qthree-option-three" name="question-three" value="c">
+					<label for="qthree-option-three" class="option">King Ferdinand II</label>
+				</div>
+				<div class="options">
+					<input type="radio" id="qthree-option-four" name="question-three" value="d">
+					<label for="qthree-option-four" class="option">Queen Margherita</label>
+				</div>
+			</div>
+
+			<button type="submit" id="submit">
+				Submit
+			</button>
+		</form>
+		<dialog id="dialog">
+			<h1 id="title"></h1>
+			<p id="results"></p>
+			<button autofocus id="close-button">Close</button>
+		</dialog>
+
+	</main>
+</body>
+<script src="app.js"></script>
+</html>
