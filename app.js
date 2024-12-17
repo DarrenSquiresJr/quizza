@@ -85,10 +85,32 @@ closeButton.addEventListener("click", () => {
 });
 
 function pageAfterSubmission() {
-    //removes submit button
+    // Removes submit button
     const elem = document.getElementById("submit");
     elem.parentNode.removeChild(elem);
-    //removes submit button
+    // Removes intro paragraph
     const elem2 = document.getElementById("intro");
     elem2.parentNode.removeChild(elem2);
+    // Adds refresh button
+    const refreshButton = document.createElement("button");
+    refreshButton.id = "refresh";
+    refreshButton.textContent = "Refresh";
+    refreshButton.style.backgroundColor = "blue";
+    refreshButton.style.color = "white";
+    refreshButton.style.padding = "10px 20px";
+    refreshButton.style.border = "none";
+    refreshButton.style.borderRadius = "5px";
+    refreshButton.style.fontSize = "18px";
+    refreshButton.style.cursor = "pointer";
+    refreshButton.style.transition = "background-color 0.2s ease, transform 0.2s ease";
+    refreshButton.style.marginTop = "20px";
+    refreshButton.style.display = "block";
+    refreshButton.style.marginLeft = "auto";
+    refreshButton.style.marginRight = "auto";
+    refreshButton.addEventListener("click", () => {
+        location.reload();
+    });
+    const questionThree = document.getElementById("question-three");
+    questionThree.parentNode.insertBefore(refreshButton, questionThree.nextSibling);
+    document.body.classList.add("keep-color");
 }

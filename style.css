@@ -36,6 +36,11 @@ img {
     height: 100vh;
 }
 
+dialog {
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .question {
     background: #ffefdd;
@@ -78,6 +83,11 @@ input[type="radio"] {
 
 input[type="radio"]:checked + .option {
     background-color: #6badce;
+    color: white;
+}
+
+.keep-color input[type="radio"]:checked + .option {
+    background-color: #f4b042;
     color: white;
 }
 
